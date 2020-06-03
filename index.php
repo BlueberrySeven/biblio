@@ -1,6 +1,6 @@
 <?php ob_start() ?>
 
-contenu page accueil
+coucou
 
 <?php  
 $content = ob_get_clean();
