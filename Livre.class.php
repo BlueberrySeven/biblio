@@ -5,11 +5,14 @@ class Livre{
     private $nbPages;
     private $image;
 
+    public static $livres; //contenant la liste des livres
+
     public function __construct($id,$titre,$nbPages,$image){
         $this->id = $id;
         $this->titre = $titre;
         $this->nbPages = $nbPages;
         $this->image = $image;
+        self::$livres[] = $this; //remplissage de la liste des livres à la fin du tableau
     }
 
     public function getId(){return $this->id;}
