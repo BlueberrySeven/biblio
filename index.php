@@ -1,9 +1,11 @@
-<?php ob_start() ?>
+<?php 
+ob_start(); 
+?>
 
-coucou
+Ici la page d'accueil
 
-<?php  
+<?php
 $content = ob_get_clean();
-$title = "Bibliothéque MGA";
+$titre = "Bibliothèque MGA";
 require "template.php";
 ?>
